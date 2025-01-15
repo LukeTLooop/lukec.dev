@@ -1,31 +1,29 @@
 
-import { useState } from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "./Typewriter";
 
 import "../styles/AnimatedText.css"
 
 function Header() {
-    const [cursorBlink, setCursorBlink] = useState<boolean>(false);
-    const [typeEffect] = useTypewriter({
-        words: ["Luke Christopherson", "test", "i like pineapples", "actually, i like kiwis more tbh"],
-        typeSpeed: 75,
-        deleteSpeed: 40,
-        onLoopDone: () => {
-            setCursorBlink(true);
-        },
-        onDelay: () => {
-            setCursorBlink(true);
-        },
-        onDelete: () => {
-            setCursorBlink(false);
-        }
-    });
+    const nameText = useTypewriter(
+        "Luke Christopherson",
+        80,
+    );
+    const professionText = useTypewriter(
+        "Full Stack Developer",
+        150,
+    )
 
     return (
-        <h1 className="text-center w-3/4 text-3xl text-green-500 animated-text">
-            {typeEffect}
-            <Cursor cursorBlinking={cursorBlink} cursorStyle="_" cursorColor="inherit" />
-        </h1>
+        <header className="flex flex-col justify-center text-left w-3/4 h-screen">
+            <h1 className="w-full text-6xl text-green-500 mb-4">
+                {nameText}
+                <Cursor />
+            </h1>
+            <p className="w-full text-3xl text-green-700 mt-4">
+                {professionText}
+                <Cursor />
+            </p>
+        </header>
     );
 }
 

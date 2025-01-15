@@ -1,30 +1,5 @@
 
-.animated-text {
+body {
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 500;
     line-height: 1.5;
-    padding: 1em;
 }
-
-/*.animated-text {
-    letter-spacing: 10px;
-    font-family: monospace;
-    border-right: 5px solid;
-    width: fit-content;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 5s steps(19),
-        cursor .4s step-end infinite alternate;
-}
-
-/* cursor blinking *
-@keyframes cursor {
-    50% { border-color: transparent };
-}
-
-/* typing effect *
-@keyframes typing {
-    from { width: 0 };
-    to { width: fit-content };
-}*/
