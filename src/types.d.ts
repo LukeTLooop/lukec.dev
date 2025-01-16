@@ -2,11 +2,17 @@
 /* Component Types */
 
 interface TypewriterProps {
-    words: [ string ],
-    multipleWordsBehavior?: [ string ],
+    words: {
+        text: string,
+        tag: keyof JSX.IntrinsicElements,
+        classNames: string,
+    }[],
+    multipleWordsBehavior?: "newLine" | "replace",
     speed?: number,
     newLinePhrase?: string,
-    cursor?: Cursor,
+    eraseSpeed?: number,
+    delayBetweenWords?: number,
+    cursor?: JSX.Element,
 }
 
 interface CursorProps {
