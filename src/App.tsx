@@ -1,7 +1,7 @@
 
 import Particles from './components/Particles';
-import Header from './containers/Header';
-import About from './containers/About';
+import Header from './containers/header/Header';
+import About from './containers/about/About';
 
 function App() {
   return (

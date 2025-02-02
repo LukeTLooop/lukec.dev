@@ -20,6 +20,9 @@ interface CursorProps {
     blinkSpeed?: number
 }
 
-interface Cursor {
-    
+interface SkillProps {
+    image: string,
+    title: string,
 }
+
+// interface Cursor {}

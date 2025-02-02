@@ -1,6 +1,6 @@
-import { Typewriter, Cursor } from "../components/Typewriter";
+import { Typewriter, Cursor } from "../../components/Typewriter";
 
-import "../styles/AnimatedText.css"
+import "../../styles/AnimatedText.css"
 
 function Header() {
     return (
