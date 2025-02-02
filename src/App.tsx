@@ -1,18 +1,20 @@
 
 import Particles from './components/Particles';
-import Header from './components/Header';
+import Header from './containers/Header';
+import About from './containers/About';
 
 function App() {
   return (
     <>
-      <main className='flex w-screen justify-center mx-auto'>
-        {/* Header */}
-        <Header />
+      {/* Header */}
+      <Header />
+      <main className='w-3/4 mx-auto'>
         {/* About */}
+        <About />
         {/* Projects */}
         {/* Code Examples */}
-        {/* Footer */}
       </main>
+      {/* Footer */}
       <Particles />
     </>
   )

@@ -1,11 +1,10 @@
-
-import { Typewriter, Cursor } from "./Typewriter";
+import { Typewriter, Cursor } from "../components/Typewriter";
 
 import "../styles/AnimatedText.css"
 
 function Header() {
     return (
-        <header className="flex flex-col justify-center text-left w-3/4 h-screen">
+        <header className="flex flex-col justify-center mx-auto text-left w-3/4 h-screen">
             <Typewriter
                 words={[
                     { text: "Luke Christopherson", tag: "h1", classNames: "w-full text-6xl text-green-500 mb-4" },
@@ -14,7 +13,7 @@ function Header() {
                 multipleWordsBehavior="newLine"
                 speed={50}
                 eraseSpeed={150}
-                delayBetweenWords={750}
+                delayBetweenWords={50}
                 newLinePhrase="\n"
                 cursor={<Cursor />}
             />
