@@ -1,9 +1,15 @@
 
-const Skill = ({ image, title }: SkillProps) => {
+const Skill = ({ image, title, link }: SkillProps) => {
     return (
-        <div className="w-full m-auto xl:w-1/2">
-            <img src={image} alt={`${title} Logo`} className="w-12 h-auto m-auto rounded-lg md:w-16 lg:w-20 xl:w-28" />
-            <p className="text-center text-lg text-white mx-auto mt-3">{title}</p>
+        <div className="flex flex-col items-center mx-5">
+            <a href={link} target="_blank">
+                <img 
+                    src={image} 
+                    alt={`${title} Logo`} 
+                    className="w-12 h-auto rounded-lg md:w-20 lg:w-20 xl:w-24 hover:transition-transform hover:scale-110 hover:cursor-pointer"
+                />
+            </a>
+            <p className="text-center text-sm text-white mt-3 md:text-lg">{title}</p>
         </div>
     );
 };
