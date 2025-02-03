@@ -23,6 +23,7 @@ interface CursorProps {
 interface SkillProps {
     image: string,
     title: string,
+    link: string
 }
 
 // interface Cursor {}
