@@ -13,6 +13,7 @@ function App() {
         <About />
         {/* Projects */}
         {/* Code Examples */}
+        {/* Contact */}
       </main>
       {/* Footer */}
       <Particles />

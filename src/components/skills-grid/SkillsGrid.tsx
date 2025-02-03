@@ -19,6 +19,11 @@ const skills = [
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
+        image: `${assets}/typescript.png`,
+        title: "TypeScript",
+        link: "https://www.typescriptlang.org/",
+    },
+    {
         image: `${assets}/react.svg`,
         title: "React",
         link: "https://react.dev/",
