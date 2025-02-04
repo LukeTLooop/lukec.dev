@@ -1,4 +1,4 @@
-import { Typewriter, Cursor } from "../../components/Typewriter";
+import { Typewriter, Cursor } from "../../components/typewriter/Typewriter";
 
 import "../../styles/AnimatedText.css"
 
