@@ -2,6 +2,7 @@
 import Particles from './components/particles/Particles';
 import Header from './containers/header/Header';
 import About from './containers/about/About';
+import Projects from './containers/projects/Projects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         {/* About */}
         <About />
         {/* Projects */}
+        <Projects />
         {/* Code Examples */}
         {/* Contact */}
       </main>

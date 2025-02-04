@@ -8,7 +8,7 @@ const images = {
 
 const About = () => {
     return (
-        <div className="mb-32">
+        <div className="mb-48">
             <h2 className="text-center text-4xl text-green-500 mb-2 pt-8">About</h2>
             <hr className="mb-10 border-green-700" />
             <div className="flex flex-row justify-around">
